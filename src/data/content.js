@@ -117,95 +117,72 @@ export const galleryData = [
   },
 ]
 
-export const diaryData = [
-  {
-    id: 'rizky',
-    owner: 'Rizky',
-    passwordHash: "88f1116b59c9506530c2e48ea59b494c321d398d8ad7c4b1933db83b0668bde3", // hash dari "rizkyyy" (tanpa tanda kutip)
+export const diaryConfig = {
+  rizky: {
+    password: "rizkyyy", // kamu yang tentukan
     color: {
       cover: 'from-rose-800 to-rose-950',
-      spine: 'bg-rose-950',
+      spine: 'bg-rose-900',
       accent: 'text-rose-300',
       tag: 'bg-rose-700',
+      button: 'bg-rose-700 hover:bg-rose-600',
+      entry: 'bg-rose-50 border-rose-100',
+      entryText: 'text-rose-900',
     },
-    coverLabel: 'My Diary',
-    coverYear: '2026',
-    entries: [
-      {
-        date: '8 Januari 2026',
-        title: 'Hari pertama KKN',
-        mood: '😐',
-        content: 'Hari pertama di lokasi KKN. Semua masih canggung, termasuk aku. Ada satu perempuan yang kalem, namanya Putri. Belum terlalu notice, tapi entah kenapa aku ingat wajahnya.',
-      },
-      {
-        date: '15 Januari 2026',
-        title: 'Mulai memperhatikan',
-        mood: '🤔',
-        content: 'Hari ini Putri cerita random soal makanan kesukaannya waktu rapat. Aku tidak tahu kenapa aku mendengarkan dengan sangat seksama. Biasanya aku tidak seperti ini.',
-      },
-      {
-        date: '23 Januari 2026',
-        title: 'Malam di rumah sakit',
-        mood: '😟',
-        content: 'Putri pingsan lagi. Aku yang antar ke rumah sakit. Semua orang kelelahan dan tertidur, tapi aku tidak bisa tidur. Aku hanya duduk dan menunggu. Aku tidak tahu ini apa namanya.',
-      },
-      {
-        date: '2 Februari 2026',
-        title: '"Pahlawan Penjagaku"',
-        mood: '🥺',
-        content: 'Putri mengirimkan tulisannya. Dia menulis tentang aku. Aku baca tiga kali. Aku tidak tahu harus berkata apa. Tidak ada yang pernah memperhatikan hal-hal kecil yang aku lakukan seperti itu.',
-      },
-      {
-        date: '14 Februari 2026',
-        title: 'kik… nyaman…',
-        mood: '🌸',
-        content: 'Dia bilang itu sambil bersandar. Tiga kata. Aku tidak menjawab karena aku tidak tahu harus bilang apa. Tapi di dalam, aku tahu — aku tidak mau pergi dari sisinya.',
-      },
-    ],
   },
-  {
-    id: 'uti',
-    owner: 'Putri',
-    passwordHash: "69e19a910862a125e0ec56cd703892e5c23369b4fea324b7a8c4212d51e7e444", // hash dari "utiii" (tanpa tanda kutip)
+  uti: {
+    password: "utiiii", // Uti yang tentukan
     color: {
       cover: 'from-pink-700 to-pink-950',
-      spine: 'bg-pink-950',
+      spine: 'bg-pink-900',
       accent: 'text-pink-300',
       tag: 'bg-pink-700',
+      button: 'bg-pink-700 hover:bg-pink-600',
+      entry: 'bg-pink-50 border-pink-100',
+      entryText: 'text-pink-900',
     },
-    coverLabel: 'My Diary',
-    coverYear: '2026',
-    entries: [
-      {
-        date: '8 Januari 2026',
-        title: 'KKN dimulai',
-        mood: '😊',
-        content: 'Hari pertama KKN. Kelompoknya lumayan, ada yang pendiam tapi kelihatan baik — namanya Rizky. Dia tidak banyak bicara tapi matanya selalu memperhatikan. Entah kenapa aku notice itu.',
-      },
-      {
-        date: '20 Januari 2026',
-        title: 'Dia selalu ada',
-        mood: '🥹',
-        content: 'Badan aku tidak enak lagi hari ini. Tapi sebelum aku bilang apa-apa, Rizky sudah bawain air. Dia tidak bilang apa-apa, hanya taruh di depanku lalu pergi. Aku diam tapi hati aku tidak diam.',
-      },
-      {
-        date: '23 Januari 2026',
-        title: 'Malam yang tidak terlupakan',
-        mood: '😢',
-        content: 'Aku pingsan dan dibawa ke rumah sakit. Yang aku ingat waktu sadar — Rizky masih di sana. Sendirian. Menunggu. Padahal yang lain sudah tidur. Aku menangis tapi pura-pura tidak.',
-      },
-      {
-        date: '1 Februari 2026',
-        title: 'Pahlawan Penjagaku',
-        mood: '💗',
-        content: 'Aku nulis tentang dia. Tentang semua hal kecil yang dia lakukan tanpa sadar. Aku takut kalau tidak aku tulis, aku akan lupa. Tapi rasanya aku tidak akan pernah bisa lupa.',
-      },
-      {
-        date: '14 Februari 2026',
-        title: 'Nyaman',
-        mood: '🌸',
-        content: 'Hari ini aku bilang "kik… nyaman…" sambil bersandar ke dia. Aku tidak tahu kenapa aku berani bilang itu. Tapi itu jujur. Aku nyaman. Dan itu hal yang sudah lama tidak aku rasakan.',
-      },
-    ],
+  },
+}
+
+export const milestoneData = [
+  {
+    id: 1,
+    date: new Date("2026-01-08"),
+    label: "Pertemuan Pertama KKN",
+    desc: "Tinggal bersama, tumbuh bersama, dan mulai saling memperhatikan.",
+    icon: "🏡",
+    type: "past",
+  },
+  {
+    id: 2,
+    date: new Date("2026-02-13"),
+    label: "Kepulangan Setelah KKN",
+    desc: "Chat tiap hari, sleepcall, dan cerita yang tidak ada habisnya.",
+    icon: "📱",
+    type: "past",
+  },
+  {
+    id: 3,
+    date: new Date("2026-06-07"),
+    label: "Ulang Tahun Rizky",
+    desc: "7 Juni — semoga jadi hari yang selalu dirayakan bersama.",
+    icon: "🎂",
+    type: "upcoming",
+  },
+  {
+    id: 4,
+    date: new Date("2026-11-18"),
+    label: "Ulang Tahun Uti",
+    desc: "18 November — hari lahirnya orang yang bilang 'kik… nyaman…'",
+    icon: "🌸",
+    type: "upcoming",
+  },
+  {
+    id: 5,
+    date: new Date("2027-09-01"),
+    label: "Lulus & Wisuda",
+    desc: "Finish line yang sedang kalian kejar bersama-sama.",
+    icon: "🎓",
+    type: "upcoming",
   },
 ]
